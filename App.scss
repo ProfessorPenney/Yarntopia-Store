@@ -1,0 +1,137 @@
+* {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.App {
+   min-height: 100vh;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.container {
+   margin: 0 5vw 200px 5vw;
+}
+
+.header {
+   text-align: center;
+   background-color: lightgreen;
+   padding: 40px;
+}
+
+.footer {
+   text-align: center;
+   height: 150px;
+   margin-top: -150px;
+   background-color: lightgray;
+   padding: 40px;
+}
+
+.logo {
+   font-size: 60px;
+   font-weight: 600;
+   letter-spacing: 0.3em;
+   .y {
+      font-family: 'Just Me Again Down Here', cursive;
+      color: red;
+   }
+   .a1 {
+      font-family: 'Just Me Again Down Here', cursive;
+      color: orange;
+   }
+   .r {
+      font-family: 'Just Me Again Down Here', cursive;
+      color: yellow;
+   }
+   .n {
+      font-family: 'Just Me Again Down Here', cursive;
+      color: green;
+      letter-spacing: 10px;
+   }
+   .t {
+      vertical-align: -55px;
+      font-size: 100px;
+      margin-right: 10px;
+      img {
+         width: 60px;
+      }
+   }
+   .o {
+      font-family: 'Marck Script', cursive;
+      color: blue;
+   }
+   .p {
+      font-family: 'Marck Script', cursive;
+      color: indigo;
+   }
+   .i {
+      font-family: 'Marck Script', cursive;
+      color: violet;
+   }
+   .a2 {
+      font-family: 'Marck Script', cursive;
+      color: red;
+   }
+}
+
+.searchbar-container {
+   margin: 30px auto;
+   width: 500px;
+
+   input {
+      border: 1px solid gray;
+      width: 100%;
+      height: 40px;
+      color: black;
+      background-color: rgb(219, 219, 219);
+      padding: 0 10px;
+      font-size: large;
+      border-radius: 10px;
+      border: none;
+   }
+   input:focus {
+      box-shadow: 2px 2px 5px rgb(233, 233, 233), -2px -2px 8px rgb(233, 233, 233),
+         -2px 2px 8px rgb(233, 233, 233), 2px -2px 8px rgb(233, 233, 233);
+   }
+   input::placeholder {
+      color: rgb(105, 105, 105);
+      text-align: center;
+   }
+}
+
+.no-results {
+   text-align: center;
+   margin-top: 100px;
+}
+
+.productGrid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+   .products {
+      box-sizing: content-box;
+      flex-shrink: 0;
+      margin: 20px;
+      width: 250px;
+      text-align: center;
+      border: 1px lightgray solid;
+      box-shadow: 1px 1px 5px lightgray, -1px -1px 5px lightgray;
+
+      img {
+         width: 250px;
+         height: 250px;
+      }
+
+      h3 {
+         padding: 30px 10px;
+      }
+
+      p {
+         padding: 0 10px 30px 10px;
+      }
+   }
+}
