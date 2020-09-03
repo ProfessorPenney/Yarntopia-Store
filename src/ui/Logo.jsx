@@ -8,7 +8,7 @@ const Logo = () => {
          <span className='r'>R</span>
          <span className='n'>N</span>
          <span className='t'>
-            <img src={require(`../img/t.png`)} alt='T' />
+            <img className='logo-t' src={require(`../img/t.png`)} alt='T' />
          </span>
          <span className='o'>o</span>
          <span className='p'>p</span>

@@ -1,14 +1,15 @@
 import React from 'react'
 
-const SearchBar = ({ settotalInv, setvisibleInv, inventory }) => {
+const SearchBar = ({ settotalInv, setvisibleInv, inventory, setshowProductTransition }) => {
    const search = query => {
+      setshowProductTransition(false)
       const productMatches = inventory.filter(product => {
          return product.search.some(searchTerm =>
             searchTerm.toLowerCase().includes(query.toLowerCase())
          )
       })
       settotalInv(productMatches)
-      setvisibleInv(productMatches.slice(0, 6))
+      setvisibleInv(productMatches.slice(0, 12))
    }
 
    return (

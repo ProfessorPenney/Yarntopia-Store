@@ -1,43 +1,41 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Products from './Products'
 
-const ProductGrid = ({ visibleInv, totalInv, setvisibleInv }) => {
-   const [isLoading, setisLoading] = useState(false)
-
-   useEffect(() => {
-      window.addEventListener('scroll', handleScroll)
-      return () => window.removeEventListener('scroll', handleScroll)
-   })
-
+const ProductGrid = ({
+   visibleInv,
+   totalInv,
+   setvisibleInv,
+   setshowProductModal,
+   setmodalProduct,
+   showProductTransition,
+   setshowProductTransition,
+   isLoading,
+   setisLoading
+}) => {
    useEffect(() => {
       if (!isLoading) return
+      setshowProductTransition(true)
       const length = visibleInv.length
       setvisibleInv([
          ...visibleInv,
-         ...totalInv.slice(length, length + 6 <= totalInv.length ? length + 6 : totalInv.length)
+         ...totalInv.slice(length, length + 12 <= totalInv.length ? length + 12 : totalInv.length)
       ])
       setisLoading(false)
-   }, [isLoading, setvisibleInv, totalInv, visibleInv])
-
-   function handleScroll() {
-      if (
-         window.innerHeight + Math.round(document.documentElement.scrollTop) <=
-            document.documentElement.offsetHeight - 50 ||
-         visibleInv.length === totalInv.length
-      ) {
-         return
-      }
-      setisLoading(true)
-   }
+   }, [isLoading, setvisibleInv, totalInv, visibleInv, setshowProductTransition, setisLoading])
 
    return visibleInv.length === 0 ? (
       <h2 className='no-results'>No Results</h2>
    ) : (
-      <div className='productGrid'>
+      <div className='product-grid'>
          {visibleInv.map(product => (
-            <Products key={product.id} product={product} />
+            <Products
+               key={product.id}
+               product={product}
+               setshowProductModal={setshowProductModal}
+               setmodalProduct={setmodalProduct}
+               showProductTransition={showProductTransition}
+            />
          ))}
-         {isLoading && <p style={{ marginTop: '50px' }}>Loading more items...</p>}
       </div>
    )
 }
