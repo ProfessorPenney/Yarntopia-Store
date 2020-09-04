@@ -8,6 +8,24 @@ $font: 'Kumbh Sans', sans-serif;
 body {
    overflow-y: scroll;
    font-family: $font;
+   color: var(--color-font);
+   background-color: var(--color-bg);
+   transition: all 500ms;
+}
+
+.light-theme {
+   --color-font: black;
+   --color-bg: white;
+   --color-accent: white;
+   --color-green: lightgreen;
+   --theme: 'dark';
+}
+.dark-theme {
+   --color-font: white;
+   --color-bg: rgb(39, 39, 39);
+   --color-accent: gray;
+   --color-green: rgb(37, 83, 37);
+   --theme: 'light';
 }
 
 .App {
@@ -25,10 +43,22 @@ body {
    height: 220px;
    width: 100vw;
    text-align: center;
-   background-color: lightgreen;
+   background-color: var(--color-green);
    padding: 40px;
    height: 220px;
    transition: all 500ms;
+
+   .theme-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 50px;
+      height: 20px;
+      border: none;
+      border-radius: 3px;
+      background-color: var(--color-bg);
+      color: var(--color-font);
+   }
 }
 
 .animate-header {
@@ -159,7 +189,7 @@ div.animate-logo {
 .product-grid {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-evenly;
+   justify-content: center;
    margin-top: 320px;
    padding-bottom: 200px;
 
@@ -189,7 +219,7 @@ div.animate-logo {
       cursor: pointer;
       margin: 20px;
       text-align: center;
-      background-color: white;
+      background-color: var(--color-accent);
       box-shadow: 0px 0px 15px black;
 
       img {

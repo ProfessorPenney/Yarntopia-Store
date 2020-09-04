@@ -7,7 +7,7 @@ const Cart = () => {
          <button className='snipcart-checkout' type='button'>
             <img src={CartImg} alt='Cart' />
          </button>
-         <span class='snipcart-items-count'></span>
+         <span className='snipcart-items-count'></span>
       </div>
    )
 }

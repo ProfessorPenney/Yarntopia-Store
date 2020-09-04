@@ -7,6 +7,26 @@
 body {
   overflow-y: scroll;
   font-family: "Kumbh Sans", sans-serif;
+  color: var(--color-font);
+  background-color: var(--color-bg);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.light-theme {
+  --color-font: black;
+  --color-bg: white;
+  --color-accent: white;
+  --color-green: lightgreen;
+  --theme: 'dark';
+}
+
+.dark-theme {
+  --color-font: white;
+  --color-bg: rgb(39, 39, 39);
+  --color-accent: gray;
+  --color-green: rgb(37, 83, 37);
+  --theme: 'light';
 }
 
 .App {
@@ -24,11 +44,23 @@ body {
   height: 220px;
   width: 100vw;
   text-align: center;
-  background-color: lightgreen;
+  background-color: var(--color-green);
   padding: 40px;
   height: 220px;
   -webkit-transition: all 500ms;
   transition: all 500ms;
+}
+
+.header .theme-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color-bg);
+  color: var(--color-font);
 }
 
 .animate-header {
@@ -196,9 +228,9 @@ div.animate-logo {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 320px;
   padding-bottom: 200px;
 }
@@ -229,7 +261,7 @@ div.animate-logo {
   cursor: pointer;
   margin: 20px;
   text-align: center;
-  background-color: white;
+  background-color: var(--color-accent);
   -webkit-box-shadow: 0px 0px 15px black;
           box-shadow: 0px 0px 15px black;
 }

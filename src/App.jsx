@@ -16,6 +16,7 @@ function App() {
    const [isLoading, setisLoading] = useState(false)
 
    useEffect(() => {
+      document.body.classList.add('light-theme')
       window.addEventListener('scroll', handleScroll)
       return () => window.removeEventListener('scroll', handleScroll)
    })
