@@ -262,7 +262,7 @@ div.animate-logo {
   z-index: 2;
 }
 
-.modal .product-modal {
+.product-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,33 +276,33 @@ div.animate-logo {
           box-shadow: 0 0 8px black;
 }
 
-.modal .product-modal img {
+.product-modal img {
   width: 50%;
   display: inline-block;
 }
 
-.modal .product-modal .info-div {
+.product-modal .info-div {
   position: relative;
   padding: 40px;
   width: 50%;
 }
 
-.modal .product-modal .info-div h3 {
+.product-modal .info-div h3 {
   text-align: center;
 }
 
-.modal .product-modal .info-div p {
+.product-modal .info-div p {
   margin-top: 40px;
 }
 
-.modal .product-modal .info-div .modal-price {
+.product-modal .info-div .modal-price {
   font-size: 20px;
   position: absolute;
   left: 20%;
   bottom: 65px;
 }
 
-.modal .product-modal .info-div button {
+.product-modal .info-div button {
   cursor: pointer;
   position: absolute;
   right: 10%;

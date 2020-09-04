@@ -220,47 +220,48 @@ div.animate-logo {
    height: 100vh;
    background: rgba(0, 0, 0, 0.377);
    z-index: 2;
-   .product-modal {
-      display: flex;
-      position: fixed;
-      background: white;
-      top: 5vh;
-      width: 70vw;
-      left: 15vw;
-      z-index: 3;
-      box-shadow: 0 0 8px black;
+}
 
-      img {
-         width: 50%;
-         display: inline-block;
+.product-modal {
+   display: flex;
+   position: fixed;
+   background: white;
+   top: 5vh;
+   width: 70vw;
+   left: 15vw;
+   z-index: 3;
+   box-shadow: 0 0 8px black;
+
+   img {
+      width: 50%;
+      display: inline-block;
+   }
+
+   .info-div {
+      position: relative;
+      padding: 40px;
+      width: 50%;
+      h3 {
+         text-align: center;
       }
 
-      .info-div {
-         position: relative;
-         padding: 40px;
-         width: 50%;
-         h3 {
-            text-align: center;
-         }
-
-         p {
-            margin-top: 40px;
-         }
-         .modal-price {
-            font-size: 20px;
-            position: absolute;
-            left: 20%;
-            bottom: 65px;
-         }
-         button {
-            cursor: pointer;
-            position: absolute;
-            right: 10%;
-            bottom: 60px;
-            background-color: #ffca19;
-            height: 30px;
-            width: 150px;
-         }
+      p {
+         margin-top: 40px;
+      }
+      .modal-price {
+         font-size: 20px;
+         position: absolute;
+         left: 20%;
+         bottom: 65px;
+      }
+      button {
+         cursor: pointer;
+         position: absolute;
+         right: 10%;
+         bottom: 60px;
+         background-color: #ffca19;
+         height: 30px;
+         width: 150px;
       }
    }
 }

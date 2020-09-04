@@ -6,7 +6,8 @@ const ProductDetailsModal = ({ product, setshowProductModal }) => {
    }
 
    return (
-      <div className='modal snipcart-add-item' onClick={removeModal}>
+      <React.Fragment>
+         <div className='modal snipcart-add-item' onClick={removeModal}></div>
          <div className='product-modal' key={product.id}>
             <img src={require(`../img/${product.img}.jpg`)} alt={product.title} />
             <div className='info-div'>
@@ -24,7 +25,7 @@ const ProductDetailsModal = ({ product, setshowProductModal }) => {
                </button>
             </div>
          </div>
-      </div>
+      </React.Fragment>
    )
 }
 
