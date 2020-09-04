@@ -11,20 +11,28 @@ const Footer = () => {
          <br />
          <p>
             Icons made by{' '}
-            <a href='https://smashicons.com/' title='Smashicons'>
+            <a style={anchorStyle} href='https://smashicons.com/' title='Smashicons'>
                Smashicons{' '}
             </a>
             and{' '}
-            <a href='https://www.flaticon.com/authors/prosymbols' title='Prosymbols'>
+            <a
+               style={anchorStyle}
+               href='https://www.flaticon.com/authors/prosymbols'
+               title='Prosymbols'>
                Prosymbols{' '}
             </a>
             from{' '}
-            <a href='https://www.flaticon.com/' title='Flaticon'>
+            <a style={anchorStyle} href='https://www.flaticon.com/' title='Flaticon'>
                www.flaticon.com
             </a>
          </p>
       </div>
    )
+}
+
+const anchorStyle = {
+   textDecoration: 'none',
+   color: 'inherit'
 }
 
 export default Footer
