@@ -192,7 +192,7 @@ div.animate-logo {
 
 .no-results {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 350px;
 }
 
 .product-grid {
@@ -205,6 +205,7 @@ div.animate-logo {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 320px;
+  padding-bottom: 200px;
 }
 
 .product-grid .grid-item-appear {
@@ -261,7 +262,7 @@ div.animate-logo {
   z-index: 2;
 }
 
-.product-modal {
+.modal .product-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,35 +276,33 @@ div.animate-logo {
           box-shadow: 0 0 8px black;
 }
 
-.product-modal img {
+.modal .product-modal img {
   width: 50%;
   display: inline-block;
-  border-bottom: 0;
-  margin-bottom: 0;
 }
 
-.product-modal .info-div {
+.modal .product-modal .info-div {
   position: relative;
   padding: 40px;
   width: 50%;
 }
 
-.product-modal .info-div h3 {
+.modal .product-modal .info-div h3 {
   text-align: center;
 }
 
-.product-modal .info-div p {
+.modal .product-modal .info-div p {
   margin-top: 40px;
 }
 
-.product-modal .info-div .modal-price {
+.modal .product-modal .info-div .modal-price {
   font-size: 20px;
   position: absolute;
   left: 20%;
   bottom: 65px;
 }
 
-.product-modal .info-div button {
+.modal .product-modal .info-div button {
   cursor: pointer;
   position: absolute;
   right: 10%;
@@ -440,6 +439,41 @@ div.animate-logo {
   .animate-search {
     top: 100px;
   }
+  .modal .product-modal {
+    top: 10vh;
+    width: 90vw;
+    left: 5vw;
+  }
+  .modal .product-modal img {
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+  }
+  .modal .product-modal .info-div {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+  }
+  .modal .product-modal .info-div h3 {
+    text-align: center;
+  }
+  .modal .product-modal .info-div p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .modal .product-modal .info-div .modal-price {
+    left: 0;
+    bottom: 80px;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .modal .product-modal .info-div button {
+    background-color: #ffca19;
+    bottom: 40px;
+    height: 30px;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -451,18 +485,23 @@ div.animate-logo {
     width: 362px;
   }
   .product-grid .products {
-    margin: 10px;
-    width: 150px;
+    margin: 3vw;
+    width: 40vw;
   }
   .product-grid .products img {
-    width: 150px;
-    height: 150px;
+    width: 40vw;
+    height: 40vw;
   }
   .product-grid .products h3 {
     padding: 20px 10px;
   }
   .product-grid .products p {
     padding: 0 10px 20px 10px;
+  }
+  .product-grid .products:hover {
+    background-color: white;
+    -webkit-transform: none;
+            transform: none;
   }
   .logo {
     top: 40px;
@@ -482,6 +521,47 @@ div.animate-logo {
   }
   .checkout-container {
     top: 30px;
+  }
+  .modal .product-modal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 10vh;
+    width: 70vw;
+    left: 15vw;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .modal .product-modal img {
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .modal .product-modal .info-div {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+  }
+  .modal .product-modal .info-div h3 {
+    text-align: center;
+  }
+  .modal .product-modal .info-div p {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .modal .product-modal .info-div .modal-price {
+    position: static;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .modal .product-modal .info-div button {
+    border-radius: 5px;
+    position: static;
+    background-color: #ffca19;
+    height: 30px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=App.css.map */

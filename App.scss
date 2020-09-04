@@ -158,7 +158,7 @@ div.animate-logo {
 
 .no-results {
    text-align: center;
-   margin-top: 100px;
+   padding-top: 350px;
 }
 
 .product-grid {
@@ -166,6 +166,7 @@ div.animate-logo {
    flex-wrap: wrap;
    justify-content: space-evenly;
    margin-top: 320px;
+   padding-bottom: 200px;
 
    .grid-item-appear {
       transform: translateY(200%);
@@ -211,25 +212,6 @@ div.animate-logo {
    }
 }
 
-.product-modal-appear {
-   // transform: scale(2);
-}
-.product-modal-appear-active {
-   // transform: scale(1);
-   // transition: transform 100ms ease-out;
-}
-.product-modal-enter {
-}
-.product-modal-enter-active {
-}
-.product-modal-exit {
-   // transform: scale(1);
-}
-.product-modal-exit-active {
-   // transform: scale(2);
-   // transition: transform 100ms ease-in;
-}
-
 .modal {
    position: fixed;
    top: 0;
@@ -238,49 +220,47 @@ div.animate-logo {
    height: 100vh;
    background: rgba(0, 0, 0, 0.377);
    z-index: 2;
-}
-.product-modal {
-   display: flex;
-   position: fixed;
-   background: white;
-   top: 5vh;
-   width: 70vw;
-   left: 15vw;
-   z-index: 3;
-   box-shadow: 0 0 8px black;
+   .product-modal {
+      display: flex;
+      position: fixed;
+      background: white;
+      top: 5vh;
+      width: 70vw;
+      left: 15vw;
+      z-index: 3;
+      box-shadow: 0 0 8px black;
 
-   img {
-      width: 50%;
-      display: inline-block;
-      border-bottom: 0;
-      margin-bottom: 0;
-   }
-
-   .info-div {
-      position: relative;
-      padding: 40px;
-      width: 50%;
-      h3 {
-         text-align: center;
+      img {
+         width: 50%;
+         display: inline-block;
       }
 
-      p {
-         margin-top: 40px;
-      }
-      .modal-price {
-         font-size: 20px;
-         position: absolute;
-         left: 20%;
-         bottom: 65px;
-      }
-      button {
-         cursor: pointer;
-         position: absolute;
-         right: 10%;
-         bottom: 60px;
-         background-color: #ffca19;
-         height: 30px;
-         width: 150px;
+      .info-div {
+         position: relative;
+         padding: 40px;
+         width: 50%;
+         h3 {
+            text-align: center;
+         }
+
+         p {
+            margin-top: 40px;
+         }
+         .modal-price {
+            font-size: 20px;
+            position: absolute;
+            left: 20%;
+            bottom: 65px;
+         }
+         button {
+            cursor: pointer;
+            position: absolute;
+            right: 10%;
+            bottom: 60px;
+            background-color: #ffca19;
+            height: 30px;
+            width: 150px;
+         }
       }
    }
 }
@@ -389,6 +369,46 @@ div.animate-logo {
    .animate-search {
       top: 100px;
    }
+   .modal {
+      .product-modal {
+         top: 10vh;
+         width: 90vw;
+         left: 5vw;
+
+         img {
+            width: 50vw;
+            height: 50vw;
+            margin: auto;
+         }
+
+         .info-div {
+            position: relative;
+            padding: 10px;
+            width: 100%;
+            h3 {
+               text-align: center;
+            }
+
+            p {
+               margin-top: 20px;
+               text-align: center;
+            }
+            .modal-price {
+               left: 0;
+               bottom: 80px;
+               width: 100%;
+               font-size: 20px;
+               text-align: center;
+            }
+            button {
+               background-color: #ffca19;
+               bottom: 40px;
+               height: 30px;
+               width: 80%;
+            }
+         }
+      }
+   }
 }
 
 @media only screen and (max-width: 670px) {
@@ -401,12 +421,12 @@ div.animate-logo {
    }
    .product-grid {
       .products {
-         margin: 10px;
-         width: 150px;
+         margin: 3vw;
+         width: 40vw;
 
          img {
-            width: 150px;
-            height: 150px;
+            width: 40vw;
+            height: 40vw;
          }
 
          h3 {
@@ -416,6 +436,10 @@ div.animate-logo {
          p {
             padding: 0 10px 20px 10px;
          }
+      }
+      .products:hover {
+         background-color: white;
+         transform: none;
       }
    }
    .logo {
@@ -436,5 +460,49 @@ div.animate-logo {
    }
    .checkout-container {
       top: 30px;
+   }
+   .modal {
+      .product-modal {
+         flex-direction: column;
+         top: 10vh;
+         width: 70vw;
+         left: 15vw;
+
+         padding: 10px;
+         border-radius: 10px;
+
+         img {
+            width: 50vw;
+            height: 50vw;
+            margin: auto;
+            border-radius: 5px;
+         }
+
+         .info-div {
+            position: relative;
+            padding: 10px;
+            width: 100%;
+            h3 {
+               text-align: center;
+            }
+
+            p {
+               margin-top: 20px;
+               text-align: center;
+            }
+            .modal-price {
+               position: static;
+               font-size: 20px;
+               margin-bottom: 10px;
+            }
+            button {
+               border-radius: 5px;
+               position: static;
+               background-color: #ffca19;
+               height: 30px;
+               width: 100%;
+            }
+         }
+      }
    }
 }

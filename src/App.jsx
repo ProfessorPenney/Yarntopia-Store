@@ -74,7 +74,6 @@ function App() {
                      setshowProductModal={setshowProductModal}
                   />
                )}
-               <div className='spacer'></div>
             </div>
          </div>
          <Footer />
