@@ -18,14 +18,18 @@ body {
   --color-bg: white;
   --color-accent: white;
   --color-green: lightgreen;
+  --color-footer: lightgray;
+  --color-billing-accent: white;
   --theme: 'dark';
 }
 
 .dark-theme {
   --color-font: white;
   --color-bg: rgb(39, 39, 39);
-  --color-accent: gray;
+  --color-accent: rgb(75, 75, 75);
   --color-green: rgb(37, 83, 37);
+  --color-footer: gray;
+  --color-billing-accent: rgb(168, 168, 168);
   --theme: 'light';
 }
 
@@ -76,7 +80,7 @@ body {
   text-align: center;
   height: 150px;
   margin-top: -150px;
-  background-color: lightgray;
+  background-color: var(--color-footer);
   padding: 40px;
 }
 
@@ -250,7 +254,6 @@ div.animate-logo {
 }
 
 .product-grid .products:hover {
-  background-color: white;
   -webkit-transition: all 100ms;
   transition: all 100ms;
   -webkit-transform: scale(1.01);
@@ -264,6 +267,8 @@ div.animate-logo {
   background-color: var(--color-accent);
   -webkit-box-shadow: 0px 0px 15px black;
           box-shadow: 0px 0px 15px black;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
 }
 
 .product-grid .products img {
@@ -294,7 +299,8 @@ div.animate-logo {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  background: white;
+  background-color: var(--color-accent);
+  color: var(--color-font);
   top: 5vh;
   width: 70vw;
   left: 15vw;
@@ -381,12 +387,14 @@ div.animate-logo {
 }
 
 #snipcart .snipcart-cart-header {
-  background-color: lightgreen;
+  background-color: var(--color-green);
+  color: var(--color-font);
   width: 100vw;
 }
 
 #snipcart .snipcart-cart-header__close-button {
   margin-left: 40px;
+  color: var(--color-font);
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -418,38 +426,45 @@ div.animate-logo {
 }
 
 #snipcart .snipcart-modal {
-  background-color: white;
+  background-color: var(--color-bg);
+  color: var(--color-font);
 }
 
 #snipcart .snipcart-modal__container {
-  background-color: white;
+  background-color: var(--color-bg);
 }
 
 #snipcart .snipcart-cart__footer {
-  background-color: white;
+  background-color: var(--color-bg);
 }
 
 #snipcart .snipcart-cart__content {
-  background-color: white;
+  background-color: var(--color-bg);
 }
 
 #snipcart .snipcart-discount-box__button {
-  background-color: white;
+  background-color: var(--color-bg);
 }
 
 #snipcart .snipcart__box {
-  background-color: white;
+  color: var(--color-font);
+  background-color: var(--color-billing-accent);
   -webkit-box-shadow: 0 0 8px black;
           box-shadow: 0 0 8px black;
 }
 
 #snipcart .snipcart-cart-summary__content {
+  background-color: var(--color-billing-accent);
   -webkit-box-shadow: 0 0 8px black;
           box-shadow: 0 0 8px black;
 }
 
+#snipcart .snipcart-cart-summary {
+  background-color: var(--color-billing-accent);
+}
+
 #snipcart .snipcart-item-line {
-  background-color: white;
+  background-color: var(--color-accent);
   -webkit-box-shadow: 2px 2px 8px gray, -2px -2px 8px gray;
           box-shadow: 2px 2px 8px gray, -2px -2px 8px gray;
 }
@@ -458,8 +473,36 @@ div.animate-logo {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+#snipcart .snipcart-item-line__container {
+  background-color: var(--color-accent);
+}
+
 #snipcart .snipcart-form {
   font-family: "Kumbh Sans", sans-serif;
+}
+
+#snipcart .snipcart-cart-summary-fees {
+  color: var(--color-font);
+}
+
+#snipcart .snipcart__font--secondary {
+  color: var(--color-font);
+}
+
+#snipcart .snipcart__font--slim {
+  color: var(--color-font);
+}
+
+#snipcart .snipcart__font--tiny {
+  color: var(--color-font);
+}
+
+#snipcart .snipcart__font--std {
+  color: var(--color-font);
+}
+
+#snipcart h3.snipcart-featured-payment-methods__title {
+  color: var(--color-bg);
 }
 
 @media only screen and (max-width: 950px) {
