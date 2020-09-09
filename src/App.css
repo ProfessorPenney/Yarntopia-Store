@@ -14,9 +14,9 @@ body {
 }
 
 .light-theme {
-  --color-font: black;
-  --color-bg: white;
-  --color-accent: white;
+  --color-font: rgb(14, 14, 14);
+  --color-bg: rgb(235, 235, 235);
+  --color-accent: rgb(235, 235, 235);
   --color-green: lightgreen;
   --color-footer: lightgray;
   --color-billing-accent: white;
@@ -277,6 +277,9 @@ div.animate-logo {
 }
 
 .product-grid .products h3 {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
   padding: 30px 10px;
 }
 
@@ -321,6 +324,9 @@ div.animate-logo {
 }
 
 .product-modal .info-div h3 {
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -470,7 +476,9 @@ div.animate-logo {
 }
 
 #snipcart .snipcart-item-line__title {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
 }
 
 #snipcart .snipcart-item-line__container {
@@ -502,7 +510,15 @@ div.animate-logo {
 }
 
 #snipcart h3.snipcart-featured-payment-methods__title {
-  color: var(--color-bg);
+  color: black;
+}
+
+#snipcart .snipcart-input {
+  background-color: var(--color-accent);
+}
+
+#snipcart .snipcart-form__select {
+  background-color: var(--color-accent);
 }
 
 @media only screen and (max-width: 950px) {
