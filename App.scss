@@ -225,7 +225,7 @@ div.animate-logo {
       text-align: center;
       background-color: var(--color-accent);
       box-shadow: 0px 0px 15px black;
-      transition: background-color 500ms;
+      transition: background-color 500ms, transform 500ms;
 
       img {
          width: 250px;

@@ -1,23 +1,5 @@
 export default [
    {
-      id: 1,
-      title: 'Pin Cushion',
-      img: '1',
-      description:
-         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
-      price: 80,
-      search: ['cute', 'pink', 'red', 'blue', 'pin cushion']
-   },
-   {
-      id: 2,
-      title: 'Yellow Sweater',
-      img: '2',
-      description:
-         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
-      price: 200,
-      search: ['ugly', 'sweater', 'yellow', 'clothing']
-   },
-   {
       id: 3,
       title: 'Gray Sweater, sleeveless',
       img: '3',
@@ -25,15 +7,6 @@ export default [
          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
       price: 50,
       search: ['gray', 'grey', 'sweater', 'clothing', 'ugly']
-   },
-   {
-      id: 4,
-      title: 'Rainbow? socks',
-      img: '4',
-      description:
-         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
-      price: 30,
-      search: ['socks', 'rainbow', 'yellow', 'blue', 'red', 'green', 'clothing', 'ugly']
    },
    {
       id: 5,
@@ -79,6 +52,15 @@ export default [
          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
       price: 125,
       search: ['scary', 'blue', 'brown', 'red', 'animal', 'clothing']
+   },
+   {
+      id: 2,
+      title: 'Yellow Sweater',
+      img: '2',
+      description:
+         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
+      price: 200,
+      search: ['ugly', 'sweater', 'yellow', 'clothing']
    },
    {
       id: 10,
@@ -180,6 +162,15 @@ export default [
       search: ['ugly', 'gray', 'grey', 'animal', 'mouse']
    },
    {
+      id: 4,
+      title: 'Rainbow? socks',
+      img: '4',
+      description:
+         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
+      price: 30,
+      search: ['socks', 'rainbow', 'yellow', 'blue', 'red', 'green', 'clothing', 'ugly']
+   },
+   {
       id: 21,
       title: 'Bunny',
       img: '21',
@@ -205,6 +196,15 @@ export default [
          'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
       price: 40,
       search: ['cute', 'pink', 'red', 'bottle', 'cover', 'strap']
+   },
+   {
+      id: 1,
+      title: 'Pin Cushion',
+      img: '1',
+      description:
+         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam architecto labore, pariatur ad accusamus error nobis dolorum harum voluptatibus, dicta esse! Harum aliquam illum adipisci soluta culpa debitis eum tenetur?',
+      price: 80,
+      search: ['cute', 'pink', 'red', 'blue', 'pin cushion']
    },
    {
       id: 24,
